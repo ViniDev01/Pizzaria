@@ -20,7 +20,13 @@ class ListProductsService {
                     price: true,
                     banner: true,
                     category_id: true,
-                    createdAt: true
+                    createdAt: true,
+                    category: {
+                        select: {
+                            id: true,
+                            name: true,
+                        }
+                    }
                 },
                 orderBy: {
                     createdAt: "desc"
