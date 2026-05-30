@@ -18,7 +18,7 @@ const addItemSchema = z.object({
 });
 
 const removeItemSchema = z.object({
-    body: z.object({
+    query: z.object({
         item_id: z.string({ message: "Order deve ser uma string"}).min(1, { message: "O id do item é obrigatório"}),
     })
 });
