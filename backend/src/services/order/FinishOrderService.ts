@@ -23,7 +23,7 @@ class FinishOrderService{
                     id: order_id
                 },
                 data: {
-                    status: false,
+                    status: true,
                 },
                 select: {
                     id: true,
